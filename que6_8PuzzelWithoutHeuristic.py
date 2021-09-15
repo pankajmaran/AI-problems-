@@ -1,4 +1,4 @@
-# 8_q Without Heuristic Search
+# 8_puzzel Without Heuristic Search
 import copy
 from heapq import heappush, heappop
 n = 3

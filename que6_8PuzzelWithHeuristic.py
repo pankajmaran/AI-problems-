@@ -1,4 +1,4 @@
-# 8_q With Heuristic Search
+# 8_puzzel With Heuristic Search
 class Node:
     def __init__(self, data, level, fval):
         """ Initialize the node with the data, level of the node and the calculated fvalue """
@@ -9,10 +9,10 @@ class Node:
     def generate_child(self):
         """ Generate child nodes from the given node by moving the blank space
             either in the four directions {up,down,left,right} """
-        tmp =   self.find(self.data, '_')
-        if tmp is None:
-            return []
-        print(tmp)
+        # tmp =   self.find(self.data, '_')
+        # if tmp is None:
+        #     return []
+        # print(tmp)
         x, y= self.find(self.data, '_')
         # y = 0
         # print(x)
@@ -131,12 +131,12 @@ puz.process()
 
 initial state 
 1 2 3
-5 6 0
+5 6 _
 7 8 4
 
 final state  
 1 2 3
 5 8 6
-0 7 4
+_ 7 4
 
 '''
